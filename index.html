@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> STAR BAKERY </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .banner {
+            background-image: url('https://source.unsplash.com/random/1200x300');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+        
+        h1, h2 {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav li {
+            margin-left: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .contact-form {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        .populer-items {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .populer-items h2 {
+            margin-bottom: 20px;
+        }
+        
+        .populer-items .item {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .populer-items .item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        
+        .populer-items .item p {
+            margin-top: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STAR BAKERY</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="banner"></div>
+    
+    <div class="container">
+        <h2>Our Delicious Treats</h2>
+        
+        <div class="gallery">
+            <img src="https://source.unsplash.com/250x250/?bread" alt="Bread">
+            <img src="https://source.unsplash.com/250x250/?cake" alt="Cake">
+            <img src="https://source.unsplash.com/250x250/?pastry" alt="Pastry">
+            <img src="https://source.unsplash.com/250x250/?cupcake" alt="Cupcake">
+            <!-- Add more images here -->
+        </div>
+
+        <div class="populer-items">
+            <h2>Popular Items</h2>
+            <div class="item">
+                <img src="https://source.unsplash.com/150x150/?croissant" alt="Croissant">
+                <p>Croissant</p>
+            </div>
+            <div class="item">
+                <img src="https://source.unsplash.com/150x150/?donut" alt="Donut">
+                <p>Donut</p>
+            </div>
+            <div class="item">
+                <img src="https://source.unsplash.com/150x150/?cookie" alt="Cookie">
+                <p>Cookie</p>
+            </div>
+            <!-- Add more popular items here -->
+        </div>  
+
+        <h2>About Us</h2>
+        <p>Welcome to Star Bakery! We are passionate about baking delicious treats and providing exceptional service to our customers. Our bakery offers a wide variety of freshly baked goods, including bread, cakes, pastries, and cupcakes. Whether you're stopping by for your morning coffee or picking up a special dessert for a celebration, we have something for everyone. Come visit us today and experience the joy of freshly baked goodness!</p>
+        
+
+    </div>
+    
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="yourname" placeholder="Your Name" required><br>
+            <input type="email" name="youremail" placeholder="Your Email" required><br>
+            <textarea name="yourmessage" rows="5" placeholder="Your Message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <div class="copyright">
+        &copy; 2024 Star Bakery. All rights reserved.
+    </div>
+</body>
+</html>
