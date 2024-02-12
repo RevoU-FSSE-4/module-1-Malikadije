@@ -7,17 +7,17 @@ Welcome to Star Bakery! This is a simple website showcasing our delicious treats
 
 - **Home:** Introduction to My Favorite Bakery and navigation links.
 - **Gallery:** Showcase of our delicious treats with images.
-![Bread](https://source.unsplash.com/250x250/?bread)
+- ![Bread](https://source.unsplash.com/250x250/?bread)
 ![Cake](https://source.unsplash.com/250x250/?cake)
 ![Pastry](https://source.unsplash.com/250x250/?pastry)
 ![Cupcake](https://source.unsplash.com/250x250/?cupcake)
 - **About Us:** Information about our bakery and our passion for baking.
 - **Popular Items:** Display of some of our popular bakery items.
- Croissant  
+- Croissant  
   ![Croissant](https://source.unsplash.com/150x150/?croissant)
- Donut  
+- Donut  
   ![Donut](https://source.unsplash.com/150x150/?donut)
- Cookie  
+- Cookie  
   ![Cookie](https://source.unsplash.com/150x150/?cookie)
 - **Contact Us:** Form to contact us for inquiries or orders.
 
