@@ -182,6 +182,12 @@
         <form action="#" method="post">
             <input type="text" name="yourname" placeholder="Your Name" required><br>
             <input type="email" name="youremail" placeholder="Your Email" required><br>
+            <select name="category" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Feedback">Feedback</option>
+                <!-- Add more options if needed -->
+            </select><br>
             <textarea name="yourmessage" rows="5" placeholder="Your Message" required></textarea><br>
             <input type="submit" value="Submit">
         </form>
