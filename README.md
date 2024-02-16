@@ -24,7 +24,7 @@ Welcome to Star Bakery! This is a simple website showcasing our delicious treats
 ## How to Use
 
 1. Clone this repository to your local machine.
-2. Open `index.html` in your web browser to view the website locally : (http://127.0.0.1:5500/index.html).
+2. Open `index.html` in your web browser to view the website locally : (https://starbakery.netlify.app/).
 3. Explore different sections of the website using the navigation links.
 
 ## Contributing
