@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Bakery</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>STAR BAKERY</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>STAR BAKERY</h1>
+        <h1>STAR BAKERY</h1>   
         <nav>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -19,24 +18,32 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="buttons">
+            <div class="burger-container">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div> 
+            <div class="dark-light-mode">
+                <input type="checkbox" id="darkSwitch">
+                <label for="darkSwitch"></label>
+            </div>
+        </div>
     </header>
-    
     <div class="banner"></div>
-    
     <div class="container">
         <h2>Our Delicious Treats</h2>
-        
         <div class="gallery">
             <img src="https://source.unsplash.com/250x250/?bread" alt="Bread">
             <img src="https://source.unsplash.com/250x250/?cake" alt="Cake">
             <img src="https://source.unsplash.com/250x250/?pastry" alt="Pastry">
             <img src="https://source.unsplash.com/250x250/?cupcake" alt="Cupcake">
+            <img src="https://source.unsplash.com/250x250/?redvelvet" alt="Redvelvet">
+            <img src="https://source.unsplash.com/250x250/?chocolate" alt="Chocolate">
             <!-- Add more images here -->
         </div>
-        
-        <h2>About Us</h2>
-        <p>Welcome to Star Bakery! We are passionate about baking delicious treats and providing exceptional service to our customers. Our bakery offers a wide variety of freshly baked goods, including bread, cakes, pastries, and cupcakes. Whether you're stopping by for your morning coffee or picking up a special dessert for a celebration, we have something for everyone. Come visit us today and experience the joy of freshly baked goodness!</p>
-        
         <div class="populer-items">
             <h2>Popular Items</h2>
             <div class="item">
@@ -52,27 +59,51 @@
                 <p>Cookie</p>
             </div>
             <!-- Add more popular items here -->
-        </div>
-        
-        <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <input type="text" name="yourname" placeholder="Your Name" required><br>
-                <input type="email" name="youremail" placeholder="Your Email" required><br>
-                <select name="category" required>
-                    <option value="" disabled selected>Select category</option>
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Feedback">Feedback</option>
-                    <!-- Add more options if needed -->
-                </select><br>
-                <textarea name="yourmessage" rows="5" placeholder="Your Message" required></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+        </div>  
+        <h2>About Us</h2>
+        <p>Welcome to Star Bakery! We are passionate about baking delicious treats and providing exceptional service to our customers. Our bakery offers a wide variety of freshly baked goods, including bread, cakes, pastries, and cupcakes. Whether you're stopping by for your morning coffee or picking up a special dessert for a celebration, we have something for everyone. Come visit us today and experience the joy of freshly baked goodness!</p>
     </div>
-    
+    <div style="text-align: center;">
+        <h3>Beauty of Cake</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jyoefWxJDrQ?si=pJg3BtCXxstaw62y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="contact-form" style="text-align: center;">
+        <h2>Contact Us</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <input type="text" name="yourname" placeholder="Your Name" required><br>
+            <input type="email" name="youremail" placeholder="Your Email" required><br>
+            <input type="date" name="birthdate" placeholder="Date of Birth" required><br>
+            <label for="living-in-indonesia">Are you living in Indonesia?</label><br>
+            <input type="radio" id="yes" name="living-in-indonesia" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="living-in-indonesia" value="no" required>
+            <label for="no">No</label><br>
+            <label for="living-in-indonesia">Kirimkan desain cake impianmu</label><br>
+            <input type="file" name="cake-design" accept="image/*" required><br> <!-- Input for cake design image -->
+            <textarea name="yourmessage" rows="5" placeholder="Your Message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <div class="copyright">
         &copy; 2024 Star Bakery. All rights reserved.
     </div>
+    <script>
+        const darkSwitch = document.getElementById('darkSwitch');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+            darkSwitch.checked = currentTheme === 'dark';
+        }
+
+        darkSwitch.addEventListener('change', function(event) {
+            if (event.target.checked) {
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
 </body>
 </html>
